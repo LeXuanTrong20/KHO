@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <caption><h2>General Admission Registration</h2></caption>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder="First Name"></td>
+                <td><input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td colspan="2"><input type="email" placeholder="Sample@example" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input name="gender" type="radio" checked>Male</td>
+                <td><input name="gender" type="radio" >Female</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Emergency Contact</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"><input type="text"></td></tr>
+            <tr>
+                <td>Do you require parking?</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input name="parking" type="radio" checked>Yes</td>
+                <td><input name="parking" type="radio" >No</td>
+            </tr>
+            <tr>
+                <td>What is your room preference?</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input name="room" type="radio" checked>Single Room</td>
+                <td><input name="room" type="radio" >Shared Room</td>
+                <td><input name="room" type="radio" >No Room Needed</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Do you have dietary restrictions?</td>
+            </tr>
+            <tr>
+                <td><input name="dietary" type="radio">None</td> <br>
+                <td><input name="dietary" type="radio">Vegetarian</td> <br>
+                <td><input name="dietary" type="radio">Glutten Allergy</td> <br>
+                <td><input name="dietary" type="radio">Lactose Allergy</td> <br>
+                <td><input name="dietary" type="radio">Nut Allergy</td> <br>
+                <td><input name="dietary" type="radio">Shelfish Allergy</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
