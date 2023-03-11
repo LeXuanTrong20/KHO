@@ -1,0 +1,11 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;  
+    background-color: blanchedalmond;
+}
+caption { 
+    color: blue;
+    background-color: aqua;
+    text-align: left;
+    font-size: 20px;
+}

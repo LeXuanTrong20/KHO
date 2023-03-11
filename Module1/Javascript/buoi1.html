@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buoi1</title>
+</head>
+<body>
+    <button
+    onmouseover="this.innerText = new Date()"
+    onmouseout="this.innerText='Hover to show datetime'"
+        onclick="alert('Hello')"
+    >Hover to show datetime</button>
+    <hr>
+
+
+    <input type="password"
+    onfocus="this.type='text'"
+    onblur="this.type='password'"
+    value="12234445"
+    >
+   <hr>
+
+
+<label for="lg">Login:</label>
+<input id="lg" type="password">
+<button id="bt" onclick="SHOW()">Show Password</button>
+
+<script>
+    function SHOW() {
+        if(document.getElementById('lg').type=='password'){
+            document.getElementById('lg').type='text';
+            document.getElementById('bt').innerText='Hide Password';
+        }
+        else{
+            document.getElementById('lg').type='password';
+            document.getElementById('bt').innerText='Show Password';
+        }
+    }
+    
+</script>
+</body>
+</html>

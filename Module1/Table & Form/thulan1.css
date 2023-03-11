@@ -1,0 +1,11 @@
+.table2 td{
+    border: 1px solid red;}
+table,td{
+    border-collapse: collapse;
+}
+.table2>tbody>tr:nth-child(odd) {
+    background-color: bisque;
+}
+.table2>tbody>tr:nth-child(even) {
+    background-color: aquamarine ;
+}

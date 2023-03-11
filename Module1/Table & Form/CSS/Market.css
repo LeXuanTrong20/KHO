@@ -1,0 +1,25 @@
+.table2 td{
+    border: 1px solid gray;
+}
+table,td{
+    border-collapse: collapse;
+}
+.table2>tbody>tr>td:nth-child(1){
+    background-color: burlywood;
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table2{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.table2>tbody>tr>td:hover {
+    background-color: chartreuse;
+    cursor: wait;
+    padding: 20px;
+}
+.table2>thead>tr>th{
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
