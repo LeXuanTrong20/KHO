@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img id="ship"  src="source/ship.png" alt="ship1">
+    </div>
+    <div style="text-align: center;" >
+        <button onmouseover="top()">top</button>
+        <button onmouseover="down()">down</button>
+        <button onmouseover="right()">right</button>
+        <button onmouseover="left()">left</button>
+    </div>
+</body>
+<script>
+   function right() {
+    document.getElementById('ship').style.transform='rotate(90deg)'}
+   function left() {
+    document.getElementById('ship').style.transform='rotate(-90deg)'}
+   function down() {
+    document.getElementById('ship').style.transform='rotate(180deg)'}
+   function top() {
+    document.getElementById('ship').style.transform='rotate(0deg)'}
+    
+</script>
+</html>

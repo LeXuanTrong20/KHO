@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <img id="imgBall" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" style="position:relative; width: 30%;left: 0px; " alt="">
+        </div>
+        <button type="button" onclick="handleClick()">Suýt</button>
+    </form>
+
+    <script>
+        function handleClick(){
+            let str_position = document.querySelector("#imgBall").style.left;
+
+            console.log(str_position);      // "200px"
+            let position  = parseInt(str_position); // 200
+
+            console.log(position + 50 + "px");
+            document.querySelector("#imgBall").style.left = position + 50 + "px";
+
+
+            console.log(`Độ rộng của màng hình ${window.innerWidth}`);
+            let eleImage = document.getElementById("imgBall").style.width;
+            console.log(eleImage);
+        }
+    </script>
+</body>
+</html>
