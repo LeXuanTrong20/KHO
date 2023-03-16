@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AverageScore</title>
+</head>
+<body>
+    <Table>
+        <tbody>
+            <tr>
+                <td>Average Score</td>
+                <td>
+                    <input type="text" id="aveScore" style="background-color: bisque;">
+                </td>
+                <td>
+                    <button style="background-color: brown;color: azure;" onclick="testrank()">Rank</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td>
+                    <input type="text" id="result1" disabled>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </Table>
+    <script>
+        function testrank() {
+            let A = document.getElementById('aveScore').value;
+            let result="";
+        if(A<0 || A>10){
+            result = 'Vui long nhap lai';
+        }else{
+            if(A>=9){
+                result = "Xuat sac";
+            }else{
+                if(A>=8){
+                    result = 'Gioi';
+                }else{
+                    if(A>=7){
+                        result = 'Kha';
+                    }else{
+                        if(A>=5){
+                            result = 'Trung binh';
+                        }else{
+                            result = 'Yeu';
+                        }
+                    }
+                }
+            }
+        }
+        document.getElementById('result1').value=result;
+        }
+    </script>
+</body>
+</html>

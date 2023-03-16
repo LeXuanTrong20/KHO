@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eletricBill</title>
+</head>
+<body>
+   <table>
+    <tbody>
+        <tr>
+            <td>Sản lượng (kWh)</td>
+            <td>
+                <input type="number" id="sl">
+            </td>
+            <td>
+                <button onclick="tt()">Tính tiền</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Tiền điện/tháng (VND)</td>
+            <td>
+                <input type="text" id="result1">
+            </td>
+            <td>VND</td>
+        </tr>
+    </tbody>
+   </table>
+   <script>
+    function tt() {
+        let X = +document.getElementById('sl').value;
+        let A = 50*1678;
+        let B = 50*1734;
+        let C = 100*2014;
+        let D = 100*2536;
+        let E = 100*2834;
+
+        let result = `${X<0 ? 'Vui long nhap lai!':
+            X<=50 ? X*1678:
+            X<=100 ? A + (X-50)*1734:
+            X<=200 ?  A+B+ (X-100)*2014:  
+            X<=300 ?  A+B+C+(X-200)*2536 : 
+            X<=400 ? A+B+C+D+(X-300)*2834 : A+B+C+D+E+(X-400)*2927}`;
+    document.getElementById('result1').value=result;
+    }
+    
+   </script>
+</body>
+</html>
