@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            border: 0.5px solid rgb(204, 204, 204);
+            align-items: center;
+           
+
+        }
+
+        .h1 {
+            display: flex;
+
+        }
+
+        .h2 {
+            display: flex;
+
+        }
+
+        .tc-left {
+            font-family: sans-serif;
+            padding: 10px 10px;
+
+        }
+
+        #area {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(252, 249, 249);
+
+
+
+        }
+
+
+        .tc-right {
+            border: 0.4px solid rgb(216, 216, 216);
+            padding: 30px 30px;
+
+        }
+
+        .photo {
+            width: 300px;
+            border-radius: 15px;
+
+        }
+
+        .photo:hover {
+            transform: translateY(10px);
+            cursor: pointer;
+            transition: 0.8s;
+        }
+
+        .product {
+            margin-left: 160px;
+            margin-right: 190px;
+            text-align: center;
+            border: 0.2px solid gainsboro;
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            background-color: white;
+
+        }
+
+        .buy {
+            background-color: rgb(233, 2, 2);
+            color: white;
+            padding: 10px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .end {
+            text-align: center;
+            background-color: rgb(153, 153, 153);
+        }
+
+        .photo-end {
+            padding: 12px;
+            border-radius: 32px;
+            width: 380px;
+            
+        }
+        .photo-end:hover{
+            transform: scale(1.10);
+            transition: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="h1">
+            <div class="tc-left">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAA1CAMAAABMd4TfAAAAclBMVEXtHST////sAADtHCPtGB/wT1PtJy7sAArvPkLvQkb+8vLtEBn96+v3qKr2pKX3rK3xa275xcb729vwWFr4vL3yc3X4tLb84+T+9/f6zs/zen3sABH71dbuNzvwXWD0k5X1m5zzhYfxZGb0jI/vSUzuMTXEuGsVAAADuklEQVRYhe2XbZuyLBCGYaAwsRfdSovU2vL//8WbQVQotex42r4814cVR5hz42VmIL+z6VpQV+94mJGATxd43EC+4UJzyWT53MUbHsj/3L/mSmiknM8c4NHex8WO3LrBd6WfTD9FM+7OccOVx0Nsde2+8yDu1Np7uDzXHW6c8EK70f3UJY63nBGxjuMSx6l9HF/UI1edW0d76LgzB9Da+7h4pn8kkTv9BOTpp+ZASulWj2MionQtPsrNkLvU7xEQSBzusocrLwnqlPncRdLpPDbPfVy6kU+5zb5KPe7L+6qfm8BzrnV5x+3Vy1z68yXu4RtcvVWo/AI3jTXq9Pfc6KZt6Re4uLj0w9ygj7t7ym3PqeFCG5l88UEuI7pVgoS9CVOWC9ETLr/ZmITxKtTPGgyHxJP9J/vykZnT8mdlOTVXXZ9xZ9SX5Ua0B9HLlb+toeINl8Gb3PBlLoHSvu8wntZcIprfP8TNlytXtocofWs1wiVQ6EXKDjcz1HI5o+N5kAtf9qvyrWxwX5mpBpJzu/dYFeS5bso8D6q6MNAN9sCdpMH6inHWNXk9k/aJDQf7/bruW1wuXVmj9DW+vlxgcWD7SFtPWjHpxB2XyxcbVzVY/nrGzZyNcOV8mYbpmZuh6hyGSbd9ORxPUbS9iQcuxK6vqP/83kbOkbKBIwsQbM9R82vVqf5YwgPXC01b0WMcjRsmMdRgPG4+Fw7Nx6P0ubwyQ4x04yI7bpa15hGucR1f8S8GHY9rYmhUYkmdgc81n5jSe0cUujXjLXcNZkupfJTLJMWuCpcrhTuuwCQlBGyoyZUuV61M3tRSpZ2qhivQysw8DnPb/Ht0868zzTqpM8i6iW5S2wGLv2aD2TRouPt6qZ9x7+8pD1zt5pFr/pX6PoB7uAng73H7f28vlwdJkhayWaid/COuqXOMRW6ok9o+zm2FmTpsE96n17cT9jm1A17nvrefu7SP31bC4a6htlfj51dRLCwATu75rV1KPL+Zrk0v9+eXL/brRhSvrQ43Wdb2/Si3ju/pGgMcngtzP7IjLyYU0T3GstCLV/Lieaq4w31EPInPIdj43EhPQxufd158xonoFDXbagqXqCKr380q+VymLPjq5yM4ZWGrLO7ySBK6ysa4RJKV7l4vr467rcdM70wOu0OY7hf3+de/jji7+9V7iplqBYB1+NxMoe9vsN6YouH6imGULdXw0A9xCd7LEhgc+TEur4qieMXlf13H6rL0JY8BZ5N1z53ugZDFfLqEx72RN1z8AyS2VtT0h8cbAAAAAElFTkSuQmCC"
+                    alt="">
+            </div>
+            <div class="tc-left">
+                <h3>Trang chủ</h3>
+            </div>
+            <div class="tc-left">
+                <h3>Nam</h3>
+            </div>
+            <div class="tc-left">
+                <h3>Nữ</h3>
+            </div>
+            <div class="tc-left">
+                <h3>Trẻ em</h3>
+            </div>
+
+        </div>
+        <div class="h2">
+            <div class="tc-right">
+                <input style="border-radius: 10px;" type="text" placeholder="  Tìm kiếm">
+            </div>
+            <div class="tc-right"><i class="fa-solid fa-magnifying-glass fa-beat" style="color: #000000;"></i></div>
+            <div class="tc-right"><i class="fa-sharp fa-solid fa-shield fa-beat" style="color: #000000;"></i></div>
+            <div class="tc-right"><i class="fa-solid fa-user fa-beat" style="color: #000000;"></i></div>
+            <div class="tc-right"><i class="fa-solid fa-right-to-bracket fa-beat" style="color: #000000;"></i></div>
+        </div>
+    </div>
+    <div id="area">
+
+    </div>
+    <div style="text-align: center; color: white; background-color: rgb(168, 7, 7); padding: 1px;">
+        <h3>SEE MORE ></h3>
+    </div>
+    <div class="end">
+
+        <div>
+            <img class="photo-end"
+                src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/457985/item/vngoods_30_457985.jpg?width=750" alt="">
+            <img class="photo-end"
+                src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/457986/sub/vngoods_457986_sub8.jpg?width=750"
+                alt="">
+            <img class="photo-end"
+                src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/457985/item/vngoods_36_457985.jpg?width=750" alt="">
+        </div>
+        <div>
+            <img  class="photo-end"
+                src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/457986/sub/goods_457986_sub11.jpg?width=750"
+                alt="">
+            <img class="photo-end"
+                src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/457985/sub/goods_457985_sub11.jpg?width=750"
+                alt="">
+            
+        </div>
+
+    </div>
+
+
+
+    <script src="uni.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcdonald's Food Order</title>
+    <link rel="icon" href="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="mcdonald.css">
+</head>
+
+<body>
+    <div class="fistweb">
+        <div class="logo">
+            <div>
+                <img style="width: 100px; margin-left: 30px;" src="img/mcdonalds-png-logo-2774.png" alt="">
+            </div>
+          <div>
+            <h1>WELCOME TO McDonald</h1>  
+          </div>
+            
+        </div>
+        <div class="taskbar">
+            <div class="search">
+                <div class="form">
+                    <i data-aos="fade-up" data-aos-delay="250" class="fa-solid fa-magnifying-glass" style="color: #ffbb00;"></i>
+                    <input data-aos="fade-up" data-aos-delay="450" type="text" placeholder="Enter your food's name ">
+                    <button data-aos="fade-up" data-aos-delay="650" >Search</button>   
+                </div>
+                <div>
+                    <span data-aos="fade-up" data-aos-delay="250" id="top" class="hometitle">HOME</span>
+                    <span data-aos="fade-up" data-aos-delay="350" class="hometitle">MENU</span>
+                    <span data-aos="fade-up" data-aos-delay="450" class="hometitle">REVIEWS</span>
+                    <span data-aos="fade-up" data-aos-delay="550" class="hometitle">BLOG</span>
+                    <span data-aos="fade-up" data-aos-delay="650" class="hometitle"> <a href="#enterMail">VOUCHER</a> </span>
+                    <span data-aos="fade-up" data-aos-delay="750" class="hometitle">CONTACT</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="container">
+        <div class="center">
+            <h2 data-aos="fade-up" data-aos-delay="250" class="selectMenu">OUR MENU</h2>
+            <div class="list">
+                <div data-aos="fade-up" data-aos-delay="150" class="item" data-key="1">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger Bò phô mai đặc biệt</div>
+                        <div class="des">
+                            Bò phô mai đặc biệt
+                        </div>
+                        <div class="price">$ 26.04</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="350"  class="item" data-key="2">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger 2 lớp bò, phô-mai</div>
+                        <div class="des">
+                            Burger 2 lớp bò và phô-mai.
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="550" class="item" data-key="3">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger Bò miếng lớn phô-mai</div>
+                        <div class="des">
+                            Burger bò miếng lớn và phô-mai
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="650"  class="item" data-key="4">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger Bò miếng lớn phô-mai</div>
+                        <div class="des">
+                            Burger bò miếng lớn và phô-mai
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="750" class="item" data-key="5">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger Chay</div>
+                        <div class="des">
+                            Tịnh tâm cùng chúng bạn
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="850"  class="item" data-key="6">
+                    <div class="img">
+                        <img class="imgitem" src="img/product-6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Burger Big Mac</div>
+                        <div class="des">
+                            Burger 2 lớp bò, phô-mai, rau tươi và sốt Big Mac.
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+
+
+                <div data-aos="fade-up" data-aos-delay="250"  class="item" data-key="7">
+                    <div class="img">
+                        <img class="imgitem" src="https://mcdonalds.vn/uploads/2018/food/ga-ran/9-ga-ran.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">6 Miếng Cánh Gà McWings™</div>
+                        <div class="des">
+                            Những món ăn có thể chia sẻ cùng bạn bè
+                        </div>
+                        <div class="price">$ 27.82</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(7)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="350" class="item" data-key="8">
+                    <div class="img">
+                        <img class="imgitem" src="https://mcdonalds.vn/uploads/2018/2-ga-ran.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">6 miếng Gà McNuggets™</div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet fuga dicta asperiores quo.
+                        </div>
+                        <div class="price">$ 20.02</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(8)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="450" class="item" data-key="9">
+                    <div class="img">
+                        <img class="imgitem" src="https://mcdonalds.vn/uploads/2018/food/ga-ran/6pcs_chicken_mcnuggets.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">9 miếng gà rán (Size Lớn)</div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet fuga dicta asperiores quo.
+                        </div>
+                        <div class="price">$ 31.52</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(9)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="550" class="item" data-key="10">
+                    <div class="img">
+                        <img class="imgitem" src="https://mcdonalds.vn/uploads/2018/food/ga-ran/3pcs_chicken_mcwings.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Phần ăn 2 miếng gà rán</div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet fuga dicta asperiores quo.
+                        </div>
+                        <div class="price">$ 24.76</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(10)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="650" class="item" data-key="11">
+                    <div class="img">
+                        <img class="imgitem" src="https://mcdonalds.vn/uploads/2018/food/evm/EVM-10-mcchicken-deluxe-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Phần ăn 8 miếng gà rán</div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet fuga dicta asperiores quo.
+                        </div>
+                        <div class="price">$ 27.08</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(11)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="750" class="item" data-key="12">
+                    <div class="img">
+                        <img  class="imgitem" src="https://mcdonalds.vn/uploads/2018/food/ga-ran/medium_world_famous_fries.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Khoai Tây Chiên (Size Lớn)</div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet fuga dicta asperiores quo.
+                        </div>
+                        <div class="price">$ 10.22</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(12)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            
+            
+   
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250" class="cart">
+            <div data-aos="fade-up" data-aos-delay="450" class="name">MyCart<i data-aos="fade-up" data-aos-delay="650" class="fa-solid fa-cart-shopping fa-beat-fade" style="color: #ffffff;"></i></div>
+            <div  class="listCart"></div>
+        </div>
+    </div>
+    <div class="getVoucher">
+        <img data-aos="fade-up" data-aos-delay="250" class="photoVoucher" src="img/1pub_FreeBigMac_2336x1040v7.jpg" alt="">
+        <div id="enterMail" class="inputVoucher">
+          <input type="text" placeholder="Enter your email to get Voucher!">
+            <button  >Send</button>  
+        </div>
+        
+    </div>
+
+
+
+    <div class="foot">
+        <div class="end">
+            <div><a href="#top">TOPWEB</a></div>
+            <div>REVIEWS</div>
+            <div>BLOGS</div>
+            <div>CONTACTS</div>
+            <div>LOCATION</div>
+        </div>
+    </div>
+
+    <script src="mcdonald.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+
+    </script>
+</body>
+
+</html>
