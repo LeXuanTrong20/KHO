@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt('Enter your number to find!')
+        let arr = [20, 2, 7, 13, 17, 23];
+        let index = -1;
+        function test() {
+            for (let i = 0; i < arr.length; i++) {
+                if (num == arr[i]) {
+                    index = i;
+                }
+            }
+            if (index > -1) {
+                alert('Finded your number in array!');
+            } else {
+                alert('Did not find your number in array!');
+            }
+        }
+        test();
+    </script>
+</body>
+
+</html>
